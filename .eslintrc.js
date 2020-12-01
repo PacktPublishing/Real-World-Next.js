@@ -42,4 +42,7 @@ module.exports = {
     'jest/no-identical-title': 'error',
   },
   plugins: ['simple-import-sort', 'jest'],
+  ignorePatterns: [
+    '01-a-brief-introduction-to-nextjs/custom-babel-and-webpack-configuration/pages/*',
+  ],
 };
