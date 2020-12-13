@@ -38,11 +38,7 @@ export default function Home() {
           Next.js app.
         </div>
         <code className={styles.code} style={{ marginTop: '1rem' }}>
-          const number =
-            Math.random()
-            |> (x) => x * 10
-            |> Math.floor
-            |> (x) => x + 1;
+          const number = Math.random() |> (x) => x * 10 |> Math.floor |> (x) => x + 1;
         </code>
       </main>
 

@@ -40,6 +40,7 @@ module.exports = {
     ],
     'jest/no-disabled-tests': 'warn',
     'jest/no-identical-title': 'error',
+    'react/prop-types': 0,
   },
   plugins: ['simple-import-sort', 'jest'],
   ignorePatterns: [

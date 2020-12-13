@@ -1,0 +1,25 @@
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+.children {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.children:hover {
+  color: #0070f3;
+}
+
+.children:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.children:nth-child(1) {
+  margin-left: 0;
+}
