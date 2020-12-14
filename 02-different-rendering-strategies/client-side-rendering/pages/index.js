@@ -18,7 +18,7 @@ export default function Home() {
                 </p>
               </div>
             </Link>
-            <Link href="/use-effect">
+            <Link href="/process-browser">
               <div className={styles.card}>
                 <h3>process.browser &rarr;</h3>
                 <p>
@@ -27,7 +27,7 @@ export default function Home() {
                 </p>
               </div>
             </Link>
-            <Link href="/use-effect">
+            <Link href="/dynamic-component">
               <div className={styles.card}>
                 <h3>dynamic component &rarr;</h3>
                 <p>

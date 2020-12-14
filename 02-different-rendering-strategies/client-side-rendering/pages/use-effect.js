@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import Highlight from '../components/Highlight';
 import styles from '../styles/Home.module.css';
 
@@ -31,6 +32,12 @@ export default Highlight;
 `;
 
 function UseEffectPage() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <>
       <main className={styles.main}>
@@ -40,7 +47,7 @@ function UseEffectPage() {
           Using the <code>React.useEffect</code> hook will make it highlight the desired content on
           the client side, once the component has been mounted.
         </p>
-        <Highlight code={codeExample} language="js" />
+        {isClient && <Highlight code={codeExample} language="js" />}
       </main>
     </>
   );
