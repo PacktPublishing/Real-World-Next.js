@@ -1,0 +1,36 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cpx \".babelrc\" dist && node node_modules/.bin/mocha dist/test/*.spec.js",
+    "test:hero": "run-s clean build test",
+    "build": "tsc && cpx \".babelrc\" dist",
+    "clean": "rm -rf dist types"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.7.4",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@types/rimraf": "^2.0.3",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "@bit/bit.envs.common.build-component": "0.0.11",
+    "@bit/bit.envs.common.create-workspace": "0.0.4",
+    "@types/chai": "^4.2.5",
+    "bit-bin": "^14.7.1",
+    "chai": "^4.2.0",
+    "cpx": "^1.5.0"
+  }
+}

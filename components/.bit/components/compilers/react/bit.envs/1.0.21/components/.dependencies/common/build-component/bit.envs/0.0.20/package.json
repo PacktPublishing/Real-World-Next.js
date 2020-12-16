@@ -1,0 +1,95 @@
+{
+  "name": "@bit/bit.envs.common.build-component",
+  "version": "0.0.20",
+  "homepage": "https://bit.dev/bit/envs/common/build-component",
+  "main": "dist/src/build-component.js",
+  "componentId": {
+    "scope": "bit.envs",
+    "name": "common/build-component",
+    "version": "0.0.20"
+  },
+  "dependencies": {
+    "fs-extra": "8.1.0",
+    "rimraf": "3.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^7.0.2",
+    "@types/rimraf": "^2.0.3",
+    "@types/fs-extra": "^8.0.1"
+  },
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": {
+        "bit.envs/compilers/typescript@3.1.49": {
+          "rawConfig": {
+            "compilerPath": "typescript/bin/tsc",
+            "compilerArguments": [
+              "--declaration"
+            ],
+            "compiledFileTypes": [
+              ".ts",
+              ".tsx"
+            ],
+            "configFileName": "tsconfig.json",
+            "tsconfig": {
+              "compilerOptions": {
+                "outDir": "dist",
+                "target": "ES2015",
+                "sourceMap": false,
+                "moduleResolution": "Node",
+                "esModuleInterop": true,
+                "module": "CommonJS",
+                "allowSyntheticDefaultImports": true,
+                "resolveJsonModule": true,
+                "declaration": true,
+                "experimentalDecorators": true,
+                "inlineSourceMap": false,
+                "inlineSources": false,
+                "jsx": "react",
+                "rootDir": "./",
+                "removeComments": true,
+                "typeRoots": [
+                  "./node_modules/@types"
+                ],
+                "importHelpers": false,
+                "skipLibCheck": true
+              },
+              "include": [
+                "./**/*"
+              ],
+              "exclude": [
+                "node_modules",
+                "dist",
+                ".dependencies",
+                "*.spec.ts",
+                "*.e2e.ts"
+              ]
+            },
+            "development": false,
+            "copyPolicy": {
+              "ignorePatterns": [
+                "package.json",
+                "package-lock.json",
+                "tsconfig.json"
+              ],
+              "disable": false
+            }
+          },
+          "options": {}
+        }
+      }
+    },
+    "overrides": {
+      "devDependencies": {
+        "@types/chai": "^4.2.5",
+        "@types/mocha": "^7.0.2",
+        "@types/rimraf": "^2.0.3",
+        "@types/fs-extra": "^8.0.1"
+      }
+    }
+  }
+}

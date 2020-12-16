@@ -1,0 +1,23 @@
+{
+  "name": "@bit/bit.utils.object.group-by",
+  "version": "1.0.0",
+  "homepage": "https://bit.dev/bit/utils/object/group-by",
+  "main": "dist/src/object/groupBy.js",
+  "componentId": {
+    "scope": "bit.utils",
+    "name": "object/group-by",
+    "version": "1.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.2"
+  },
+  "peerDependencies": {},
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/flow@0.0.10",
+      "tester": "bit.envs/testers/mocha@0.0.5"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": {
+      "scope": null,
+      "name": "navbar"
+    },
+    "isSymlink": true,
+    "hash": "c63e3c1cfa2ff651ad4cfadea3e21265ffcf8ca3"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "compilers/react"
+    },
+    "isSymlink": false,
+    "hash": "acfc8a808ec3ad8abacd313c9c8b456c1fd7b0b3"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "internal/get-babel-options"
+    },
+    "isSymlink": false,
+    "hash": "d4771e232e52a7a9ef391bf363d523bc932b014d"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "internal/babel-base-compiler"
+    },
+    "isSymlink": false,
+    "hash": "98f497a5e1cba818d2d5da02020ed566a572b936"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "common/compiler-types"
+    },
+    "isSymlink": false,
+    "hash": "9c86fadf101414c730daf20f3b3c0b3adcd84e79"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "common/create-workspace"
+    },
+    "isSymlink": false,
+    "hash": "6b4cdb50159308c72de7a4291fc551540ba4a390"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "common/get-capsule-name"
+    },
+    "isSymlink": false,
+    "hash": "26aefd5aeef44fe4baf09eb442719418744f2d7d"
+  },
+  {
+    "id": {
+      "scope": "bit.envs",
+      "name": "common/build-component"
+    },
+    "isSymlink": false,
+    "hash": "4046cf768d7527702d0d1393e876cf12efe18835"
+  },
+  {
+    "id": {
+      "scope": "bit.utils",
+      "name": "object/has-own-property"
+    },
+    "isSymlink": false,
+    "hash": "68b489f0ac79f13787c77dc1fd6a7beb18a7b6ba"
+  },
+  {
+    "id": {
+      "scope": "bit.utils",
+      "name": "object/group-by"
+    },
+    "isSymlink": false,
+    "hash": "9155f60c15a0d4c1c0301f15ef2a09a99687ca77"
+  },
+  {
+    "id": {
+      "scope": "micheleriva.real-world-nextjs-book",
+      "name": "navbar"
+    },
+    "isSymlink": false,
+    "hash": "e6490a7f240412e46d3fc803bca23ec671639ca1"
+  }
+]
