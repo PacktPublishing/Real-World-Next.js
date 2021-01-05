@@ -8,6 +8,7 @@
     "email": "ciao@micheleriva.it",
     "url": "https://www.micheleriva.it"
   },
+  "private": "false",
   "license": "ISC",
   "scripts": {
     "commit": "cz",
