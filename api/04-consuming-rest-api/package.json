@@ -1,0 +1,14 @@
+{
+  "name": "04-consuming-rest-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "bundle": "yarn bundle:private && yarn bundle:public",
+    "bundle:private": "yarn esbuild ./private/index.js --bundle --platform=node --target=node14 --outfile=private.dist.js",
+    "bundle:public": "yarn esbuild ./public/index.js --bundle --platform=node --target=node14 --outfile=public.dist.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.50"
+  }
+}

@@ -8,6 +8,9 @@
     "email": "ciao@micheleriva.it",
     "url": "https://www.micheleriva.it"
   },
+  "workspaces": [
+    "./api/*"
+  ],
   "private": "false",
   "license": "ISC",
   "scripts": {

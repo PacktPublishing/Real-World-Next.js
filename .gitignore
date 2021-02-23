@@ -140,6 +140,8 @@ dist
 # Icon must end with two \r
 Icon
 
+public.dist.js
+private.dist.js
 
 # Thumbnails
 ._*
