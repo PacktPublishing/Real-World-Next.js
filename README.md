@@ -4,6 +4,6 @@
 
 _The $5 campaign runs from **December 15th 2020** to **January 13th 2021.**_
 
-# Next.js-Web-Development
+# Real-World Next.js
 
-Next.js Web Development, published by Packt
+Real-World Next.js, published by Packt
