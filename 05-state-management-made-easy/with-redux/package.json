@@ -1,5 +1,5 @@
 {
-  "name": "with-usecontext",
+  "name": "with-redux",
   "version": "0.1.0",
   "private": true,
   "scripts": {
