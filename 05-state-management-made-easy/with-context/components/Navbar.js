@@ -4,9 +4,7 @@ import cartContext from '../components/context/cartContext';
 
 function Navbar() {
   const { items } = useContext(cartContext);
-  const totalItemsAmount = Object.keys(items)
-    .map((key) => items[key])
-    .reduce((x, y) => x + y, 0);
+  const totalItemsAmount = Object.values(items).reduce((x, y) => x + y, 0);
 
   return (
     <div className="w-full bg-purple-600 p-4 text-white">

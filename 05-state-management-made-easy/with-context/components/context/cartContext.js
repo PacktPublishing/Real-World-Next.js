@@ -1,8 +1,8 @@
 import { createContext } from 'react';
 
-const ShoppingContext = createContext({
+const ShoppingCartContext = createContext({
   items: {},
   setItems: () => null,
 });
 
-export default ShoppingContext;
+export default ShoppingCartContext;
