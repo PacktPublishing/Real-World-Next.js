@@ -7,7 +7,7 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined',
     link: new HttpLink({
-      uri: 'https://api-eu-central-1.graphcms.com/v2/cklqadss09nmi01xddib40icd/master',
+      uri: 'https://rwnjs-signbook.herokuapp.com/v1/graphql',
     }),
     cache: new InMemoryCache(),
   });

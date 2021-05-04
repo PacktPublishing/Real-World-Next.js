@@ -23,7 +23,7 @@ function NewSign() {
   return (
     <div className="flex justify-center items-center flex-col mt-20">
       <h1 className="text-3xl mb-10">Sign the Real-World Next.js signbook!</h1>
-      <div className="max-w-7xl rounded-xl shadow-xl bg-purple-50 p-7 mb-10 grid grid-rows-1 gap-4">
+      <div className="max-w-7xl shadow-xl bg-purple-50 p-7 mb-10 grid grid-rows-1 gap-4 rounded-md border-2 border-purple-800">
         <div>
           <label htmlFor="nickname" className="text-purple-900 mb-2">
             Nickname
@@ -32,7 +32,7 @@ function NewSign() {
             id="nickname"
             type="text"
             onChange={(e) => handleInput({ e, name: 'nickname' })}
-            placeHolder="Your name"
+            placeholder="Your name"
             className="p-2 rounded-lg w-full"
           />
         </div>
@@ -42,7 +42,7 @@ function NewSign() {
           </label>
           <textarea
             id="content"
-            placeHolder="Leave a message here!"
+            placeholder="Leave a message here!"
             onChange={(e) => handleInput({ e, name: 'content' })}
             className="p-2 rounded-lg w-full"
           />
@@ -55,7 +55,7 @@ function NewSign() {
             id="country"
             type="text"
             onChange={(e) => handleInput({ e, name: 'country' })}
-            placeHolder="Country"
+            placeholder="Country"
             className="p-2 rounded-lg w-full"
           />
 

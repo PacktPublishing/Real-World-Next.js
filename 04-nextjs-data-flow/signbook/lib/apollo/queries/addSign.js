@@ -1,9 +1,11 @@
 import { gql } from '@apollo/client';
 
 const ADD_SIGN = gql`
-  mutation AddNewSign($nickname: String!, $content: String!, $country: String) {
-    createSign(data: { nickname: $nickname, content: $content, country: $country }) {
-      id
+  mutation InsertNewSign($nickname: String!, $content: String!, $country: String) {
+    insert_sign(objects: { nickname: $nickname, country: $country, content: $content }) {
+      returning {
+        uuid
+      }
     }
   }
 `;
