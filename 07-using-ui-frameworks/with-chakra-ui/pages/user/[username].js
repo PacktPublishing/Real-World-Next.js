@@ -20,7 +20,7 @@ export function getStaticPaths() {
 
   return {
     paths,
-    fallback: 'blocking',
+    fallback: false,
   };
 }
 
