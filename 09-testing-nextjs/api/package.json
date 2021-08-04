@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "rwnjs-9-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A template for kick starting a Cloudflare Workers project",
   "main": "dist/index.js",
   "scripts": {
