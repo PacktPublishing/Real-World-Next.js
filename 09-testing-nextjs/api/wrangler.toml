@@ -1,0 +1,7 @@
+name = "chapter-9-api"
+type = "javascript"
+
+account_id = "d0d5e86dc6b863290b3f75067bf097b6"
+workers_dev = true
+route = ""
+zone_id = ""
