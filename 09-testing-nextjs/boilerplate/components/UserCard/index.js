@@ -7,7 +7,7 @@ export default function UserCard(user) {
 
   return (
     <Link href={`/u/${user.name.username}`} passHref>
-      <Box rounded="sm" boxShadow="xl" as="a">
+      <Box rounded="sm" boxShadow="xl" as="a" pb="2">
         <Box pos="relative" w="full" h="24">
           <Image
             key={user.id}

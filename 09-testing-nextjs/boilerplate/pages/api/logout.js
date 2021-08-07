@@ -1,0 +1,16 @@
+import { withIronSession } from 'next-iron-session';
+
+function handler(req, res) {
+  req.session.destroy();
+  res.redirect('/');
+}
+
+export default withIronSession(handler, {
+  // Never commit this data! Use environment variables instead.
+  // This is just an example.
+  password: 'hsabMv3<F#@B&[cd!Z@u}dZMNZu,W:mH',
+  cookieName: 'chapter9cookie',
+  cookieOptions: {
+    secure: process.env.NODE_ENV === 'production',
+  },
+});

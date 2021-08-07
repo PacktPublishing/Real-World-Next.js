@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
       <Nav />
-      <Box w="container.xl" m="auto">
+      <Box w="container.xl" m="auto" pb="28">
         <Component {...pageProps} />
       </Box>
     </ChakraProvider>

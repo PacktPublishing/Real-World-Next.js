@@ -1,4 +1,5 @@
-import { Box, Grid, Text } from '@chakra-ui/react';
+import { useState } from 'react';
+import { Box, Grid, Text, Switch } from '@chakra-ui/react';
 import UserCard from '../components/UserCard';
 
 export async function getServerSideProps() {
@@ -13,7 +14,8 @@ export async function getServerSideProps() {
 }
 
 export default function Home({ users }) {
-  const usersList = users;
+  const [openToWorkFilter, setOpenToWorkFilter] = useState(false);
+  const usersList = users.filter((user) => (openToWorkFilter ? user.work.openToWork : true));
 
   return (
     <Box>
@@ -27,6 +29,11 @@ export default function Home({ users }) {
         bgClip="text">
         FIND YOUR NEXT CO-WORKER
       </Text>
+      <Box mb="12">
+        <Switch colorScheme="linkedin" onChange={() => setOpenToWorkFilter(!openToWorkFilter)}>
+          Show open to work only
+        </Switch>
+      </Box>
       <Grid gridTemplateColumns="repeat(4, 1fr)" gap="8">
         {usersList.map((user) => (
           <UserCard key={user.id} {...user} />
