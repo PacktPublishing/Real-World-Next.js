@@ -7,6 +7,16 @@ export async function getServerSideProps({ params }) {
   const articleReq = await fetch(`http://localhost:3000/api/article?id=${articleID}`);
   const article = await articleReq.json();
 
+  if (articleReq.status === 404) {
+    return {
+      redirect: {
+        permanent: false,
+        destination: '/404',
+      },
+      props: {},
+    };
+  }
+
   return {
     props: {
       article,
