@@ -1,5 +1,5 @@
 {
-  "name": "with-unit-and-integration-tests",
+  "name": "boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
