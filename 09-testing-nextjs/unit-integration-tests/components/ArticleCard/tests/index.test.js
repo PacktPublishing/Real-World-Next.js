@@ -7,7 +7,7 @@ import ArticleCard from '../index';
 import { cutTextToLength } from '../../../utils';
 import { article } from '../tests/mock';
 
-describe('ArticleCard should render the article preview', () => {
+describe('ArticleCard', () => {
   test('Generated link should be in the correct format', () => {
     const component = render(<ArticleCard {...article} />);
     const link = component.getByRole('link').getAttribute('href');
