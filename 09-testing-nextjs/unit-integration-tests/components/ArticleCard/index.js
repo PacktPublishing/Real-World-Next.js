@@ -21,7 +21,7 @@ export default function ArticleCard(article) {
           <div className="text-xl font-bold leading-2 h-16">{article.title}</div>
           <div className="mt-2 text-sm">{cutTextToLength(article.body, 100)}</div>
           <hr className="divide-solid border-blue-50 mt-4 mb-4" />
-          <div className="text-sm"> Written by {article.author.name} </div>
+          <div className="text-sm">Written by {article.author.name}</div>
         </div>
       </a>
     </Link>
