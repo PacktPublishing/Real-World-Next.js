@@ -1,0 +1,27 @@
+{
+  "name": "boilerplate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "cypress": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "next": "11.1.0",
+    "postcss": "^8.3.6",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^12.0.0",
+    "cypress": "^8.3.0",
+    "jest": "^27.0.6",
+    "start-server-and-test": "^1.13.1"
+  }
+}

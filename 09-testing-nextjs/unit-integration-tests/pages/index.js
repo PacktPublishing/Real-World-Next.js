@@ -1,6 +1,6 @@
 import ArticleCard from '../components/ArticleCard';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const articlesReq = await fetch('http://localhost:3000/api/articles');
   const articles = await articlesReq.json();
 
