@@ -33,3 +33,9 @@
   width: 15rem;
   cursor: pointer;
 }
+
+.formError {
+  color: red;
+  font-size: 0.8rem;
+  text-align: center;
+}

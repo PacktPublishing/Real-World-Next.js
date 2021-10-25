@@ -1,12 +1,52 @@
-import styles from '../styles/Home.module.css';
+import { useState } from 'react';
+import { useRouter } from 'next/router';
+import { useAuth } from '../lib/hooks/auth';
+import styles from '../styles/app.module.css';
+
+async function handleLogin(email, password) {
+  const resp = await fetch('/api/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      email,
+      password,
+    }),
+  });
+
+  const data = await resp.json();
+
+  if (data.success) {
+    return;
+  }
+
+  throw new Error('Wrong email or password');
+}
 
 export default function Home() {
+  const router = useRouter();
+  const [loginError, setLoginError] = useState(null);
+  const { loading, loggedIn } = useAuth();
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const { email, password } = event.target.elements;
 
-    console.log(email.value, password.value);
+    setLoginError(null);
+    handleLogin(email.value, password.value)
+      .then(() => router.push('/protected-route'))
+      .catch((err) => setLoginError(err.message));
   };
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
+
+  if (!loading && loggedIn) {
+    router.push('/protected-route');
+    return null;
+  }
 
   return (
     <div className={styles.container}>
@@ -20,6 +60,8 @@ export default function Home() {
         <input type="password" id="password" />
 
         <button type="submit">Login</button>
+
+        {loginError && <div className={styles.formError}> {loginError} </div>}
       </form>
     </div>
   );
