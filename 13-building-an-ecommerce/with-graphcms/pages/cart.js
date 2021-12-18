@@ -4,6 +4,7 @@ import { Box, Button, Divider, Flex, Text } from '@chakra-ui/react';
 import graphql from '../lib/graphql';
 import getProductsById from '../lib/graphql/queries/getProductsById';
 import cartContext from '../lib/context/Cart';
+import loadStripe from '../lib/stripe';
 
 export default function Cart() {
   const { items } = useContext(cartContext);
@@ -30,6 +31,26 @@ export default function Cart() {
       .map((id) => products.find((product) => product.id === id).price * (items[id] / 100))
       .reduce((x, y) => x + y)
       .toFixed(2);
+  }
+
+  async function handlePayment() {
+    const stripe = await loadStripe();
+
+    const res = await fetch('/api/checkout', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        items,
+        success_url: `${window.location.origin}/success`,
+      }),
+    });
+
+    const { session } = await res.json();
+    await stripe.redirectToCheckout({
+      sessionId: session.id,
+    });
   }
 
   return (
@@ -67,7 +88,9 @@ export default function Cart() {
               <Text fontSize="xl" fontWeight="bold">
                 Total: €{getTotal()}
               </Text>
-              <Button colorScheme="blue"> Pay now </Button>
+              <Button colorScheme="blue" onClick={handlePayment}>
+                Pay now
+              </Button>
             </Flex>
           </>
         )}
