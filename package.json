@@ -1,15 +1,26 @@
 {
-  "name": "Next.js-Web-Development",
+  "name": "real-world-next.js",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/PacktPublishing/Next.js-Web-Development.git",
+  "repository": "https://github.com/PacktPublishing/Real-World-Next.js",
   "author": {
     "name": "Michele Riva",
     "email": "ciao@micheleriva.it",
     "url": "https://www.micheleriva.it"
   },
   "workspaces": [
-    "./api/*"
+    "01-a-brief-introduction-to-nextjs",
+    "02-different-rendering-strategies",
+    "03-next-js-basics-and-built-in-components",
+    "04-nextjs-data-flow",
+    "05-managing-local-and-global-states-in-nextjs",
+    "06-css-and-built-in-styling-methods",
+    "07-using-ui-frameworks",
+    "08-using-custom-server",
+    "09-testing-nextjs",
+    "11-different-deployment-platforms",
+    "12-managing-authentication-and-user-sessions",
+    "13-building-an-ecommerce"
   ],
   "private": "false",
   "license": "ISC",
