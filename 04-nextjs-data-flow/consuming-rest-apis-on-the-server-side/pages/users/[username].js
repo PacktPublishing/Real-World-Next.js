@@ -22,7 +22,7 @@ export async function getServerSideProps(ctx) {
   };
 }
 
-function HomePage({ user }) {
+function UserPage({ user }) {
   return (
     <div>
       <div>
@@ -55,4 +55,4 @@ function HomePage({ user }) {
   );
 }
 
-export default HomePage;
+export default UserPage;
