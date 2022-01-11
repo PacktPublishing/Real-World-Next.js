@@ -13,7 +13,7 @@ function BreadCrumbs() {
       <Link href="/process-browser">
         <div className={styles.children}>process.browser</div>
       </Link>
-      <Link href="/dynamic">
+      <Link href="/dynamic-component">
         <div className={styles.children}>dynamic</div>
       </Link>
     </div>
