@@ -25,7 +25,7 @@ This book covers the following exciting features:
 * Write unit tests and integration tests in your Next.js application
 * Discover the powerful routing system and Next.js’ built-in components
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/180107349) today!
+If you feel this book is for you, get your [copy](https://www.amazon.com/Real-World-Next-js-high-performance-applications-production-dp-180107349X/dp/180107349X/ref=mt_other?_encoding=UTF8&me=&qid=1643811992) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" alt="https://www.packtpub.com/" border="5" /></a>
 
