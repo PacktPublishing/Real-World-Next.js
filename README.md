@@ -70,3 +70,7 @@ With the following software and hardware list you can run all code files present
 While writing this book, he worked as a senior software engineer in the architecture team of ViacomCBS, building a multi-tenant Node.js application at the heart of their streaming websites and networks.
 Currently, he's employed as a senior software architect at NearForm.
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781801073493">https://packt.link/free-ebook/9781801073493 </a> </p>
